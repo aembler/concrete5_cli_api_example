@@ -1,0 +1,11 @@
+.DS_Store
+configuration.php
+
+# Ignore composer stuff
+/vendor/
+composer.lock
+
+# Ignore developer stuff
+.idea
+node_modules
+.env

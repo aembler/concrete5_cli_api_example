@@ -1,0 +1,25 @@
+{
+  "name": "concrete5/cli-api-example",
+  "description": "An example command line application that hooks into a concrete5 site.",
+  "type": "project",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Concrete\\Console\\Api\\Example\\" : "./src/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "platform": {
+      "php": "7.2"
+    }
+  },
+  "require": {
+    "concrete5/concrete5-api-client": "dev-master",
+    "symfony/console": "^3.4",
+    "monolog/monolog": "^1.0",
+    "symfony/monolog-bridge": "^4.0"
+  }
+}
