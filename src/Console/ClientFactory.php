@@ -1,22 +1,21 @@
 <?php
 namespace Concrete\Console\Api\Example\Console;
 
-use Concrete\Api\Client\ClientFactory as ApiClientFactory;
-use Concrete\Api\Client\OAuth2\Configuration\ClientCredentialsConfiguration;
-use Concrete\Api\Client\OAuth2\Configuration\ConfigurationInterface;
+use Concrete\Nightcap\ClientFactory as ApiClientFactory;
+use Concrete\Nightcap\OAuth2\Configuration\ClientCredentialsConfiguration;
+use Concrete\Nightcap\OAuth2\Configuration\ConfigurationInterface;
 use Concrete\Api\Client\OAuth2\Helper\ProviderBridge;
-use Concrete\Api\Client\OAuth2\Middleware\Client\AuthorizationClientFactory;
-use Concrete\Api\Client\OAuth2\Middleware\GrantType\ClientCredentialsGrantType;
-use Concrete\Api\Client\OAuth2\Middleware\GrantType\GrantTypeInterface;
-use Concrete\Api\Client\OAuth2\Middleware\MiddlewareFactory;
+use Concrete\Nightcap\OAuth2\Middleware\Client\AuthorizationClientFactory;
+use Concrete\Nightcap\OAuth2\Middleware\GrantType\ClientCredentialsGrantType;
+use Concrete\Nightcap\OAuth2\Middleware\GrantType\GrantTypeInterface;
+use Concrete\Nightcap\OAuth2\Middleware\MiddlewareFactory;
 use Concrete\Api\Client\Service\Concrete5ServiceCollection;
-use Concrete\Api\Client\Service\ServiceDescriptionFactory;
-use Concrete\Api\Client\ServiceClientFactory;
+use Concrete\Nightcap\Service\ServiceDescriptionFactory;
+use Concrete\Nightcap\ServiceClientFactory;
 use kamermans\OAuth2\Persistence\NullTokenPersistence;
 use Monolog\Logger;
 use Symfony\Bridge\Monolog\Handler\ConsoleHandler;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Console\Question\Question;
 
 class ClientFactory
 {

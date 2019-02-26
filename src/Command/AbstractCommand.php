@@ -1,7 +1,7 @@
 <?php
 namespace Concrete\Console\Api\Example\Command;
 
-use Concrete\Api\Client\OAuth2\Configuration\ConfigurationInterface;
+use Concrete\Nightcap\OAuth2\Configuration\ConfigurationInterface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;

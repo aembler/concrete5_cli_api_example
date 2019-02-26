@@ -1,10 +1,8 @@
 <?php
 namespace Concrete\Console\Api\Example\Command;
 
-use Concrete\Api\Client\OAuth2\Configuration\ClientCredentialsConfiguration;
-use Concrete\Api\Client\OAuth2\Configuration\PasswordCredentialsConfiguration;
-use Concrete\Api\Client\OAuth2\Middleware\GrantType\ClientCredentialsGrantType;
-use Concrete\Api\Client\OAuth2\Middleware\GrantType\PasswordCredentialsGrantType;
+use Concrete\Nightcap\OAuth2\Configuration\PasswordCredentialsConfiguration;
+use Concrete\Nightcap\OAuth2\Middleware\GrantType\PasswordCredentialsGrantType;
 use Concrete\Console\Api\Example\Console\ClientFactory;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
